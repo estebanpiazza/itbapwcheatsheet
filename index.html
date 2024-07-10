@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet de HTML, CSS y JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+            text-align: left;
+        }
+        @media print {
+            body {
+                padding: 0;
+            }
+            table {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Cheatsheet de HTML, CSS y JavaScript</h1>
+
+<h2>HTML</h2>
+<table>
+    <tr>
+        <th>Elemento</th>
+        <th>Descripción</th>
+        <th>Ejemplo</th>
+    </tr>
+    <tr>
+        <td>&lt;!DOCTYPE html&gt;</td>
+        <td>Declaración del tipo de documento</td>
+        <td>&lt;!DOCTYPE html&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;html&gt;</td>
+        <td>Raíz del documento HTML</td>
+        <td>&lt;html lang="es"&gt;&lt;/html&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;head&gt;</td>
+        <td>Contiene metadatos y enlaces</td>
+        <td>&lt;head&gt;&lt;/head&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;title&gt;</td>
+        <td>Título de la página</td>
+        <td>&lt;title&gt;Mi Página&lt;/title&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;body&gt;</td>
+        <td>Contenido principal de la página</td>
+        <td>&lt;body&gt;&lt;/body&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;h1&gt; a &lt;h6&gt;</td>
+        <td>Encabezados de diferentes niveles</td>
+        <td>&lt;h1&gt;Título 1&lt;/h1&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;p&gt;</td>
+        <td>Párrafo</td>
+        <td>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;a&gt;</td>
+        <td>Enlace</td>
+        <td>&lt;a href="http://ejemplo.com"&gt;Enlace&lt;/a&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;img&gt;</td>
+        <td>Imagen</td>
+        <td>&lt;img src="imagen.jpg" alt="Descripción"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;ul&gt; / &lt;ol&gt;</td>
+        <td>Lista desordenada/ordenada</td>
+        <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;/ul&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;div&gt;</td>
+        <td>División de bloque</td>
+        <td>&lt;div&gt;Contenido&lt;/div&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;span&gt;</td>
+        <td>Contenedor en línea</td>
+        <td>&lt;span&gt;Texto en línea&lt;/span&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;form&gt;</td>
+        <td>Formulario</td>
+        <td>&lt;form action="submit.php" method="post"&gt;&lt;/form&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;input&gt;</td>
+        <td>Campo de entrada</td>
+        <td>&lt;input type="text" name="nombre"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;button&gt;</td>
+        <td>Botón</td>
+        <td>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</td>
+    </tr>
+</table>
+
+<h2>CSS</h2>
+<table>
+    <tr>
+        <th>Propiedad</th>
+        <th>Descripción</th>
+        <th>Ejemplo</th>
+    </tr>
+    <tr>
+        <td>color</td>
+        <td>Color del texto</td>
+        <td>color: red;</td>
+    </tr>
+    <tr>
+        <td>background-color</td>
+        <td>Color de fondo</td>
+        <td>background-color: yellow;</td>
+    </tr>
+    <tr>
+        <td>font-size</td>
+        <td>Tamaño de la fuente</td>
+        <td>font-size: 16px;</td>
+    </tr>
+    <tr>
+        <td>margin</td>
+        <td>Margen externo</td>
+        <td>margin: 10px;</td>
+    </tr>
+    <tr>
+        <td>padding</td>
+        <td>Relleno interno</td>
+        <td>padding: 10px;</td>
+    </tr>
+    <tr>
+        <td>border</td>
+        <td>Borde</td>
+        <td>border: 1px solid black;</td>
+    </tr>
+    <tr>
+        <td>width</td>
+        <td>Ancho del elemento</td>
+        <td>width: 100px;</td>
+    </tr>
+    <tr>
+        <td>height</td>
+        <td>Altura del elemento</td>
+        <td>height: 100px;</td>
+    </tr>
+    <tr>
+        <td>display</td>
+        <td>Tipo de visualización del elemento</td>
+        <td>display: block;</td>
+    </tr>
+    <tr>
+        <td>position</td>
+        <td>Posición del elemento</td>
+        <td>position: absolute;</td>
+    </tr>
+    <tr>
+        <td>top, right, bottom, left</td>
+        <td>Posición relativa al contenedor</td>
+        <td>top: 10px; left: 10px;</td>
+    </tr>
+    <tr>
+        <td>flex</td>
+        <td>Flexbox: Flexibilidad del contenedor</td>
+        <td>display: flex;</td>
+    </tr>
+    <tr>
+        <td>grid</td>
+        <td>Grid: Sistema de cuadrícula</td>
+        <td>display: grid;</td>
+    </tr>
+    <tr>
+        <td>align-items</td>
+        <td>Alineación de elementos en el eje vertical</td>
+        <td>align-items: center;</td>
+    </tr>
+    <tr>
+        <td>justify-content</td>
+        <td>Justificación de elementos en el eje horizontal</td>
+        <td>justify-content: space-between;</td>
+    </tr>
+</table>
+
+<h2>JavaScript</h2>
+<table>
+    <tr>
+        <th>Función / Método</th>
+        <th>Descripción</th>
+        <th>Ejemplo</th>
+    </tr>
+    <tr>
+        <td>console.log()</td>
+        <td>Imprime mensaje en la consola</td>
+        <td>console.log("Hola, mundo!");</td>
+    </tr>
+    <tr>
+        <td>document.getElementById()</td>
+        <td>Selecciona un elemento por su ID</td>
+        <td>document.getElementById("miElemento");</td>
+    </tr>
+    <tr>
+        <td>addEventListener()</td>
+        <td>Añade un evento a un elemento</td>
+        <td>element.addEventListener("click", function);</td>
+    </tr>
+    <tr>
+        <td>innerHTML</td>
+        <td>Cambia el contenido HTML de un elemento</td>
+        <td>element.innerHTML = "Nuevo contenido";</td>
+    </tr>
+    <tr>
+        <td>innerText</td>
+        <td>Cambia el texto de un elemento</td>
+        <td>element.innerText = "Nuevo texto";</td>
+    </tr>
+    <tr>
+        <td>function</td>
+        <td>Declara una función</td>
+        <td>function miFuncion() {}</td>
+    </tr>
+    <tr>
+        <td>var, let, const</td>
+        <td>Declaran variables</td>
+        <td>let x = 10;</td>
+    </tr>
+    <tr>
+        <td>if...else</td>
+        <td>Estructura condicional</td>
+        <td>if (x > 10) { ... } else { ... }</td>
+    </tr>
+    <tr>
+        <td>for</td>
+        <td>Bucle for</td>
+        <td>for (let i = 0; i < 10; i++) { ... }</td>
+    </tr>
+    <tr>
+        <td>while</td>
+        <td>Bucle while</td>
+        <td>while (condición) { ... }</td>
+    </tr>
+    <tr>
+        <td>Array</td>
+        <td>Array: Colección de elementos</td>
+        <td>let arr = [1, 2, 3];</td>
+    </tr>
+    <tr>
+        <td>.push()</td>
+        <td>Añade un elemento al final de un array</td>
+        <td>arr.push(4);</td>
+    </tr>
+    <tr>
+        <td>.pop()</td>
+        <td>Elimina el último elemento de un array</td>
+        <td>arr.pop();</td>
+    </tr>
+    <tr>
+        <td>.length</td>
+        <td>Devuelve la longitud de un array</td>
+        <td>arr.length;</td>
+    </tr>
+    <tr>
+        <td>JSON.stringify()</td>
+        <td>Convierte un objeto en una cadena JSON</td>
+        <td>JSON.stringify(obj);</td>
+    </tr>
+    <tr>
+        <td>JSON.parse()</td>
+        <td>Convierte una cadena JSON en un objeto</td>
+        <td>JSON.parse(string);</td>
+    </tr>
+</table>
+
+</body>
+</html>
